@@ -1,0 +1,176 @@
+/* ------------GENERAL----------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #1E1E1E;
+    color: white;
+    line-height: 1.3em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* ---------HEADER------------- */
+header{
+    background-color: #121212;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header_part1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* ---------MAIN------------- */
+main{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+}
+.seccion{
+    display: flex;
+    flex-direction: column;
+    flex:3;
+    
+}
+/* --------------SECTION---------------- */
+section div{
+    padding: 10px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+section{
+    background-color: #1E1E1E;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+.fila1{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding: 5px;
+}
+.fila2{
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+.fila1 div, .fila2 div{
+    flex:1;
+    text-align: center;
+}
+/* ---------ASIDE------------- */
+aside{
+    background-color: #121212;
+    padding: 20px;
+    flex:1;
+
+}
+.motivacion{
+    margin-top: 2vh;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    gap: 5px;
+}
+li{
+    margin-bottom: 2px;
+}
+/* ---------ARTICLE------------- */
+article{
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    padding: 20px;
+    gap: 15px;
+}
+/* -----------FORMULARIO----------- */
+form{
+    background-color: #2C2C2C;
+    padding: 20px;
+}
+.form-inside{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+}
+input{
+    background-color: #1E1E1E;
+    display: block;
+}
+form button, form input[type="submit"]{
+    background-color: #E53935;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+fieldset h4, fieldset p{
+    text-align: center;
+}
+.form-part1, .form-part2, .form-part3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px; /* separa los inputs verticalmente */
+}
+.form-part1 input{
+    width: 100%;
+    max-width: 300px; /* o el ancho que prefieras */
+}
+ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+/* -----------FOOTER----------- */
+footer{
+    background-color: #121212;
+    padding: 20px;
+}
+/* -------FONTS---------- */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
