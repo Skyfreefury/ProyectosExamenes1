@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Img/fitness_center_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 <body>
     <header id="inicio">
@@ -84,9 +86,9 @@
                         <img src="Img/Hombro.png" alt="">
                         <p>Hombros</p>
                     </div>
-                    <div class="Trapecio">
-                        <img src="Img/Trapesio.png" alt="">
-                        <p>Trapecio</p>
+                    <div class="Pantorrillas">
+                        <img src="Img/Pantorrillas.png" alt="">
+                        <p>Pantorrillas</p>
                     </div>
                 </div>
                 <div class="fila2">
@@ -103,7 +105,7 @@
                         <p>Abdominales</p>
                     </div>
                     <div class="Piernas">
-                        <img src="Img/Pierna.png" alt="">
+                        <img src="Img/Piernas.png" alt="">
                         <p>Piernas</p>
                     </div>
                 </div>
@@ -150,12 +152,17 @@
                 <p>Rellena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
             </div>
             <div class="form-inside">
-                <div class="fomr-part1">
-                    <input type="text" placeholder="Pepe" required id="name" name="name">
-                    <input type="text" placeholder="Pérez" required id="last-name" name="last-name">
-                    <input type="number" id="edad" name="edad" required min="14" max="100" placeholder="18">
-                    <input type="email" id="email" name="email" required placeholder="pepeperez@gmail.com">
-                    <input type="tel" placeholder="+34 123 456 789" required id="telefono" name="telefono">
+                <div class="form-part1">
+                    <div>
+                        <input type="text" placeholder="Nombre" required id="name" name="name">
+                        <input type="text" placeholder="Apellidos" required id="last-name" name="last-name">
+                        <input type="number" id="edad" name="edad" required min="14" max="100" placeholder="Edad">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" required placeholder="Email@">
+                        <input type="tel" placeholder="Teléfono" required id="telefono" name="telefono">
+                        <input type="text" placeholder="Ciudad" required id="ciudad" name="ciudad">
+                    </div>
                 </div>
                 <div class="form-part2">
                     <label for="motivo">Objetivo:</label>
@@ -188,36 +195,43 @@
                     </select>
                 </div>
             </div>
-            <div>
+            <div class="botonEnviar">
                 <input type="submit" value="Enviar">
             </div>
         </fieldset>
     </form>
     <footer id="footer">
-        <h2>Contáctanos</h2>
-        <p>
-            📍 <strong>Dirección:</strong> Calle FiuFiu 24, Madrid, España <br>
-            📞 <strong>Teléfono:</strong> +34 123 456 789 <br>
-            ✉️ <strong>Email:</strong> contacto@fiufiufitness.com
-        </p>
-
-        <h3>Horarios</h3>
-        <p>
-            Lunes a Viernes: 6:00 AM - 10:00 PM <br>
-            Sábado: 8:00 AM - 6:00 PM <br>
-            Domingo: Cerrado
-        </p>
-
-        <h3>Síguenos</h3>
-        <p>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/?locale=es_ES" target="_blank">Facebook</a>
-            <a href="https://www.tiktok.com/es-419/" target="_blank">TikTok</a>
-        </p>
-
-        <p>
-            © 2025 Todos los derechos reservados.
-        </p>
+        <div class="footer1">
+            <div>
+                <h2>Contáctanos</h2>
+            <p>
+                📍 <strong>Dirección:</strong> Calle FiuFiu 24, Madrid, España <br>
+                📞 <strong>Teléfono:</strong> +34 123 456 789 <br>
+                ✉️ <strong>Email:</strong> contacto@fiufiufitness.com
+            </p>
+            </div>
+            <div>
+                <h3>Horarios</h3>
+            <p>
+                Lunes a Viernes: 6:00 AM - 10:00 PM <br>
+                Sábado: 8:00 AM - 6:00 PM <br>
+                Domingo: Cerrado
+            </p>
+            </div>
+            <div>
+                <h3>Síguenos:</h3>
+            <div class="footer2-1">
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="https://www.tiktok.com/es-419/" target="_blank"><i class="bi bi-tiktok"></i> TikTok</a>
+            </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <p>
+                © 2025 Todos los derechos reservados.
+            </p>
+        </div>
     </footer>
 </body>
 </html>
