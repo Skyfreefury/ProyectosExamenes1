@@ -1,0 +1,292 @@
+/* ===============================
+    styles.css — Comentado sección por sección
+    Proyecto: Gym Web
+   =============================== */
+
+/* ------------GENERAL----------- */
+/* Reset de márgenes y box model para todos los elementos */
+
+/* ------------GENERAL----------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #1E1E1E;
+    color: white;
+    line-height: 1.3em;
+}
+/* Enlaces sin subrayado y color blanco */
+a{
+    text-decoration: none;
+    color: white;
+}
+/* ---------HEADER------------- */
+/* Header fijo en la parte superior, fondo oscuro y distribución horizontal */
+header{
+    background-color: #121212;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header_part1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* Navegación horizontal con separación y animación de color */
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav a {
+    position: relative;
+    text-decoration: none; /* Desactivamos el subrayado normal */
+    color: white;          /* O el color que uses */
+    transition: color 1s; /* Esto sí se puede animar */
+}
+/* ---------MAIN------------- */
+/* Main con layout de dos columnas (sección y aside) y fuente secundaria */
+main{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+}
+
+.seccion{
+    display: flex;
+    flex-direction: column;
+    flex:3;
+}
+/* --------------SECTION---------------- */
+/* Contenedor de cada bloque de sección */
+section div{
+    padding: 10px;
+    background-color: #1E1E1E;
+}
+/* Sección principal de rutinas */
+section{
+    background-color: #1E1E1E;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+/* Enlaces de sección con fuente Lato y color oscuro */
+section a {
+    color: #121212;
+    font-family: "Lato", sans-serif;
+}
+/* Fila de tarjetas de rutinas (fila1 y fila2) */
+.fila1{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding: 5px;
+}
+.fila2{
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+.fila1 div, .fila2 div{
+    flex:1;
+    text-align: center;
+}
+/* Tarjetas de grupos musculares */
+.Pecho, .Espalda, .Piernas, .Biceps, .Triceps, .Abdominales, .Hombros, .Pantorrillas {
+    background-color: white;       /* Fondo blanco para toda la tarjeta */
+    border: 1px solid #2C2C2C;    /* Borde */
+    border-radius: 15px;           /* Bordes redondeados */
+    padding: 10px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.Pecho a div,
+.Espalda a div,
+.Piernas a div,
+.Biceps a div,
+.Triceps a div,
+.Abdominales a div,
+.Hombros a div,
+.Pantorrillas a div {
+    background-color: white; /* Fondo blanco para toda la tarjeta */
+    border-radius: 15px;
+    padding: 10px;
+}
+/* ---------ASIDE------------- */
+/* Aside lateral con fondo oscuro */
+aside{
+    background-color: #121212;
+    padding: 20px;
+    flex:1;
+}
+/* Título del aside */
+aside h3{
+    margin-left: 15px;
+}
+/* Bloque de frases motivacionales */
+.motivacion{
+    margin-top: 2vh;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    gap: 5px;
+}
+/* Espaciado entre elementos de lista */
+li{
+    margin-bottom: 2px;
+}
+/* ---------ARTICLE------------- */
+/* Artículo principal de la página */
+article{
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    padding: 20px;
+    gap: 15px;
+}
+/* -----------FORMULARIO----------- */
+form{
+    font-family: 'Lato', sans-serif;
+    background-color: #2C2C2C;
+    padding: 20px;
+}
+.form-inside{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-around;
+}
+input{
+    background-color: #1E1E1E;
+    display: block;
+}
+form button, form input[type="submit"]{
+    background-color: #E53935;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+fieldset h4, fieldset p{
+    text-align: center;
+}
+.form-part1, .form-part2, .form-part3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-part1 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.form-part1 div input{
+    margin-bottom: 10px;
+    height: 2.5vh;
+    max-height: 3vh;
+    width: 100%;
+    max-width: 300px; /* o el ancho que prefieras */
+    color: ghostwhite;
+}
+form ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.form-part2{
+    margin-right: 100px;
+}
+.botonEnviar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+/* -----------FOOTER----------- */
+footer{
+    font-family: 'Lato', sans-serif;
+    background-color: #121212;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer1 div p{
+    margin-top: 10px;
+}
+.footer2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.footer2-1{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer a{
+    position: relative;
+    text-decoration: none; /* Desactivamos el subrayado normal */
+    color: white;          /* O el color que uses */
+    transition: color 1s; /* Esto sí se puede animar */
+}
+/* -------FONTS---------- */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* ---------ANIMACIONES------------ */
+nav a::after , footer a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Para separarlo un poquito del texto */
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 1s;
+}
+nav a:hover::after, footer a:hover::after {
+    width: 100%;
+}
+.Pecho:hover,.Espalda:hover,.Piernas:hover,.Biceps:hover,.Triceps:hover,.Abdominales:hover,.Hombros:hover,.Pantorrillas:hover{
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
