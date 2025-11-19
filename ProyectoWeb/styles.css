@@ -163,6 +163,21 @@ aside h3{
 li{
     margin-bottom: 2px;
 }
+.suplemento{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+.suplemento h3{
+    text-decoration: underline;
+    font-family: "Lato",sans-serif;
+}
+.suplemento ul, .suplemento li{
+    margin-top: 10px;
+}
 /* ---------ARTICLE------------- */
 /* Artículo principal de la página */
 article{

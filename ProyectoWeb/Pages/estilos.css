@@ -48,7 +48,15 @@ ul {
 ul li {
     margin-bottom: 8px;
 }
-
+/* Imagenes */
+img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+img:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+}
 /* Botón de volver o redirección */
 .button-back {
     display: inline-block;
