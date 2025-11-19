@@ -12,11 +12,9 @@ public class Cancion extends Pista {
     public String getGenero() {
         return genero;
     }
-
     public void setGenero(String genero) {
         this.genero = genero;
     }
-
     // Constructor con parámetros
     public Cancion(String titulo, String autor, int duracion, String genero) {
         super(titulo, autor, duracion);
@@ -30,5 +28,9 @@ public class Cancion extends Pista {
     @Override
     public void reproducir(){
         System.out.println("Reproduciendo: " + titulo + " ---> " + "( " +  duracion + " segundos )" + " de " + autor + " y genero " + genero);
+    }
+    @Override
+    public String getTipo(){
+        return "Podcast";
     }
 }

@@ -11,7 +11,7 @@ abstract class Pista {
     
     }
     //Getter and Setter
-        public String getTitulo(){
+    public String getTitulo(){
         return titulo;
     }
     public void SetTitulo(String titulo ){
@@ -31,6 +31,6 @@ abstract class Pista {
     }
     //Metodos
     public abstract void reproducir();
-
+    public abstract String getTipo();
     
 }

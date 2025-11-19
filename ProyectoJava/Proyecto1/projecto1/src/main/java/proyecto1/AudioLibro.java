@@ -16,8 +16,12 @@ public class AudioLibro extends Pista {
     public String toString(){
         return "AudioLibro: " + titulo + " Autor: " + autor + " Duracion: " + duracion + " y Narrador: " + narrador;
     }
+    @Override
     public void reproducir(){
         System.out.println("Reproduciendo: " + titulo + " ---> " + "( " +  duracion + " segundos )" + " de " + autor + " y narrador " + narrador);
     }
-
+    @Override
+    public String getTipo(){
+        return "AudioLibro";
+    }
 }

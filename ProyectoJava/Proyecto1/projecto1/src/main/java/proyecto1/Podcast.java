@@ -20,4 +20,8 @@ public class Podcast extends Pista {
     public void reproducir(){
         System.out.println("Reproduciendo: " + titulo + " ---> " + "( " +  duracion + " segundos )" + " de " + autor + " y como invitado " + invitado);
     }
+    @Override
+    public String getTipo(){
+        return "Cancion";
+    }
 }

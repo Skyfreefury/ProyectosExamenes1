@@ -54,4 +54,38 @@ public class Playlist {
                 System.out.println("No se encontro la Pista");
             }
     }
+    public void ordenarPorDuracion(){
+        int num = listaPistas.size();
+        boolean cambio;
+        for(int i=0; i<num-1;i++){
+            cambio = false;
+            for(int j =0; j<num-1-i;j++){
+                if(listaPistas.get(j).getDuracion()>listaPistas.get(j+1).getDuracion()){
+                    Pista temp = listaPistas.get(j);
+                    listaPistas.set(j, listaPistas.get(j+1));
+                    listaPistas.set(j+1, temp);
+                    cambio = true;
+                }
+            }
+            if(!cambio){
+                break;
+            }
+        }
+        System.out.println("Pistas ordenadas por duracion: ");
+        listarPistas();
+    }
+    public void ordenarPorTipo(){
+        int num =listaPistas.size();
+        for (int i = 0; i < num - 1; i++) {
+            for (int j = 0; j < num - 1 - i; j++) {
+                if (listaPistas.get(j).getTipo().compareToIgnoreCase(listaPistas.get(j + 1).getTipo()) > 0) {
+                    Pista temp = listaPistas.get(j);
+                    listaPistas.set(j, listaPistas.get(j + 1));
+                    listaPistas.set(j + 1, temp);
+                }
+            }
+        }
+        System.out.println("Pistas ordenadas por tipo: ");
+        listarPistas();
+    }
 }
