@@ -1,3 +1,16 @@
+// 6) Reproductor de Música (Playlist)
+// Modelo OO
+// Pista (abs) → Cancion, Podcast, Audiolibro (cada una con duración y atributo extra) ·
+// Playlist ArrayList<Pista>.
+// Funcionalidad (10 ptos)
+// • Crear playlist y añadir/eliminar pistas (2.0)
+// • Listar pistas (polimórfico) con toString() (1.5)
+// • Reproducir simulado: muestra “Reproduciendo …” según tipo (1.5)
+// • Duración total de la playlist (1.5)
+// • Buscar por título/autor (1.5)
+// • Menú + encapsulación/@Override (2.0)
+// Extra (+0.5): ordenar por duración o por tipo+título
+
 package proyecto1;
 
 import java.util.Scanner;

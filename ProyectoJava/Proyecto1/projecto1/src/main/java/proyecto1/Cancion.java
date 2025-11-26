@@ -31,6 +31,6 @@ public class Cancion extends Pista {
     }
     @Override
     public String getTipo(){
-        return "Podcast";
+        return "Cancion";
     }
 }
