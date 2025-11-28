@@ -5,8 +5,6 @@
 
 /* ------------GENERAL----------- */
 /* Reset de márgenes y box model para todos los elementos */
-
-/* ------------GENERAL----------- */
 * {
     margin: 0;
     padding: 0;
@@ -308,3 +306,112 @@ nav a:hover::after, footer a:hover::after {
 .Pecho:hover,.Espalda:hover,.Piernas:hover,.Biceps:hover,.Triceps:hover,.Abdominales:hover,.Hombros:hover,.Pantorrillas:hover{
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
 }
+.Pecho:hover, .Espalda:hover, .Piernas:hover, .Biceps:hover, .Triceps:hover, .Abdominales:hover, .Hombros:hover, .Pantorrillas:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra sutil */
+}
+/* ---------RESPONSIVE DESIGN------------ */
+/* Ajustes para diferentes tamaños de pantalla */
+/* Tablets (pantallas menores a 992px) */
+@media (max-width: 992px) {
+    main {
+        flex-direction: column; /* sección y aside se apilan */
+    }
+
+    aside {
+        margin-top: 20px;
+        flex: unset;
+    }
+
+    /* Article más cómodo en tablet */
+    article {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+
+    /* Tarjetas en dos columnas */
+    .fila1, .fila2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .fila1 div, .fila2 div {
+        flex: 1 1 calc(50% - 20px);
+        max-width: 45%;
+    }
+}
+
+/* Móviles (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Article con imagen y texto apilados */
+    .seccion > img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Tarjetas en una sola columna */
+    .fila1 div, .fila2 div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    /* Formulario vertical */
+    .form-inside {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-part1 {
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .form-part1 div input {
+        max-width: 100%;
+    }
+
+    /* Footer apilado */
+    .footer1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    }
+
+    /* Pantallas muy pequeñas (menores a 480px) */
+    @media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        line-height: 1.2em;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    form button, form input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
